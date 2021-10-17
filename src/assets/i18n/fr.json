@@ -1,0 +1,22 @@
+{
+    "Sitetitle": "Mission Blueface",
+    "Profile": "Profil",
+    "FirstName": "Prénom",
+    "LastName": "Nom de famille",
+    "UserName": "Nom d'utilisateur",
+    "Email": "E-mail",
+    "Submit": "Soumettre",
+    "LoadingProfile":"Chargement du profil...",
+    "SavingProfile":"Enregistrement du profil...",
+    "Error":"Erreur!",
+    "InvalidName":"Nom incorrect",
+    "ErrorOnEmail":"Erreur lors de la génération d'email",
+    "ProfileNotFound":"Profile not found",
+    "EmptyFirstName":"Le prénom ne peut pas être vide.",
+    "EmptyLastName":"Le nom de famille ne peut pas être vide.",
+    "InvalidFirstName":"Veuillez entrer un prénom valide.",
+    "InvalidLastName":"Merci d'entrer un nom de famille valide.",
+    "SaveNameError":"Nom incorrect",
+    "EmailGenerationError":"Erreur lors de la génération d'email",
+    "ChooseLanguage":"Choisissez la langue"
+}

@@ -1,0 +1,82 @@
+<div class="profile-container">
+  <h1 class="pb-15">{{ title | translate }}</h1>
+  <div class="pb-15">
+    <p>
+      {{ "UserName" | translate }}: {{ user?.username ? user.username : "..." }}
+    </p>
+  </div>
+  <div class="pb-15">
+    <p>{{ "Email" | translate }}: {{ user?.email ? user.email : "..." }}</p>
+  </div>
+  <div>
+    <form #userDetailForm="ngForm" (ngSubmit)="saveProfile(userDetailForm)">
+      <div class="form-control pb-15">
+        <label for="firstName">{{ "FirstName" | translate }}:</label>
+        <input
+          id="firstName"
+          type="text"
+          ngModel
+          name="firstName"
+          #firstName="ngModel"
+          required
+          pattern="[a-zA-Z]*"
+          [disabled]="isLoading"
+        /><br />
+
+        <div
+          *ngIf="firstName.invalid && (firstName.dirty || firstName.touched)"
+          class="alert"
+        >
+          <p *ngIf="firstName.errors?.required">
+            {{ "EmptyFirstName" | translate }}
+          </p>
+          <p *ngIf="firstName.errors?.pattern">
+            {{ "InvalidFirstName" | translate }}
+          </p>
+        </div>
+      </div>
+      <div class="form-control pb-15">
+        <label for="lastName">{{ "LastName" | translate }}:</label>
+        <input
+          id="lastName"
+          type="text"
+          #lastName="ngModel"
+          ngModel
+          name="lastName"
+          required
+          pattern="[a-zA-Z]*"
+          [disabled]="isLoading"
+        />
+        <div
+          *ngIf="lastName.invalid && (lastName.dirty || lastName.touched)"
+          class="alert"
+        >
+          <p *ngIf="lastName.errors?.required">
+            {{ "EmptyLasttName" | translate }}
+          </p>
+          <p *ngIf="lastName.errors?.pattern">
+            {{ "InvalidLastName" | translate }}
+          </p>
+        </div>
+      </div>
+      <button
+        type="submit"
+        class="btn-success"
+        [disabled]="!userDetailForm.form.valid"
+      >
+        {{ "Submit" | translate }}
+      </button>
+    </form>
+  </div>
+  <p *ngIf="isLoading">{{ "LoadingProfile" | translate }}</p>
+  <p *ngIf="isSaving">{{ "SavingProfile" | translate }}</p>
+  <p *ngIf="error.hasErrorInSave || error.hasErrorInEmail">
+    {{ "Error" | translate }}
+    <ng-container *ngIf="error.hasErrorInSave">{{
+      "SaveNameError" | translate
+    }}</ng-container>
+    <ng-container *ngIf="error.hasErrorInEmail">{{
+      "EmailGenerationError" | translate
+    }}</ng-container>
+  </p>
+</div>

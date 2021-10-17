@@ -1,0 +1,22 @@
+{
+    "Sitetitle": "Blueface-Auftrag",
+    "Profile": "Profil",
+    "FirstName": "First Name",
+    "LastName": "Vorname",
+    "UserName": "Nutzername",
+    "Email": "Email",
+    "Submit": "einreichen",
+    "LoadingProfile":"Profil wird geladen...",
+    "SavingProfile":"Profil wird gespeichert...",
+    "Error":"Fehler!",
+    "InvalidName":"Ungültiger Name",
+    "ErrorOnEmail":"Fehler bei der E-Mail-Generierung",
+    "ProfileNotFound":"Profil nicht gefunden",
+    "EmptyFirstName":"Der Vorname darf nicht leer sein.",
+    "EmptyLastName":"Der Nachname darf nicht leer sein.",
+    "InvalidFirstName":"Bitte tragen Sie einen gültigen Vornamen ein.",
+    "InvalidLastName":"Bitte geben Sie einen gültigen Nachnamen ein.",
+    "SaveNameError":"Ungültiger Name",
+    "EmailGenerationError":"Fehler bei der E-Mail-Generierung",
+    "ChooseLanguage":"Sprache wählen"
+}

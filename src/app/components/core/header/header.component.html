@@ -1,0 +1,49 @@
+<nav class="navbar">
+  <div class="container language-btn">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="50"
+      height="36"
+      viewBox="0 0 50 36"
+      role="img"
+    >
+      <g fill="none" fill-rule="evenodd">
+        <g
+          stroke="#4d4c4c"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          transform="rotate(30 14.912 12.822)"
+        >
+          <path
+            d="M23.196 28.598c-5.967 3.308-13.83.982-17.138-4.986-3.308-5.967-1.152-13.487 4.816-16.795C16.84 3.51 24.36 5.665 27.669 11.633c1.466 2.645 2.409 6.763.314 12.125"
+          ></path>
+          <ellipse
+            cx="16.938"
+            cy="18.031"
+            rx="4.154"
+            ry="12.142"
+            transform="rotate(-30.001 16.938 18.03)"
+          ></ellipse>
+          <path d="M5.42 19.568L24.63 8.694M9.368 26.463l19.21-11.04"></path>
+        </g>
+      </g>
+    </svg>
+
+    <span class="form-inline">
+      <select
+        class="form-control"
+        #selectedLang
+        (change)="switchLang(selectedLang.value)"
+      >
+        <option
+          *ngFor="let language of translate.getLangs()"
+          [value]="language"
+          [selected]="language === translate.currentLang"
+        >
+          {{ language }}
+        </option>
+      </select>
+    </span>
+  </div>
+</nav>

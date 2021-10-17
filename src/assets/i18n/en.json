@@ -1,0 +1,22 @@
+{
+    "Sitetitle": "Blueface Assignment",
+    "Profile": "Profile",
+    "FirstName": "First Name",
+    "LastName": "Last Name",
+    "UserName": "Username",
+    "Email": "Email",
+    "Submit": "Submit",
+    "LoadingProfile":"Loading profile...",
+    "SavingProfile":"Saving profile...",
+    "Error":"Error!",
+    "InvalidName":"Invalid name",
+    "ErrorOnEmail":"Error on email generation",
+    "ProfileNotFound":"Profil non trouvé",
+    "EmptyFirstName":"First name cannot be empty.",
+    "EmptyLastName":"Last name cannot be empty.",
+    "InvalidFirstName":"Please enter a valid first name.",
+    "InvalidLastName":"Please enter a valid last name.",
+    "SaveNameError":"Invalid name",
+    "EmailGenerationError":"Error on email generation",
+    "ChooseLanguage":"Choose language"
+}
